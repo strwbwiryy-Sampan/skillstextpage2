@@ -22,7 +22,7 @@
         padding: 50px;
         border-radius: 15px;
         text-align: center;
-        font-family: 'Lucida Sans Unicode', Verdana, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .buttons {
@@ -37,7 +37,7 @@
 <body>
 
 <div class="box">
-    <h1 class="fw-bold fs-4">LOG IN AUTHENTICATION FORM</h1>
+    <h1 class="fw-bold fs-4">LOG IN FORM</h1>
     <p>Please fill out the following blanks to log in.</p>
 
     <form id="loginForm" onsubmit="return false;">
@@ -75,7 +75,7 @@
         do {
             // successful credentials (same as existing check)
             if (email === "hello@gmail.com" && password === "0123456") {
-                alert("Log in successful! Welcome back, Vivian J. Dela Cruz!");
+                alert("You have successfully log in! Welcome back!");
                 attempt_counter = 0; // reset after success
                 messageEl.innerHTML = "";
                 window.location.href = "notebooks.html"; // go to second page
