@@ -5,6 +5,9 @@
 <style>
 body {
   font-family: "Lato", sans-serif;
+  display: flex;
+  height: 100vh;
+  margin: 0;
 }
 
 .sidenav {
@@ -32,8 +35,20 @@ body {
 }
 
 .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+  margin-left: 200px; 
 }
+
+.box {
+  border-radius: 15px;
+  padding: 130px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  background-color: #818181;
+  
+  }
+
 
 </style>
 </head>
@@ -45,12 +60,46 @@ body {
   <a onclick="alert('...')">Virtual Notebooks</a>
   <a onclick="alert('...')">Tasks</a>
   <a onclick="document.location='index.html'">Logout</a>
-  
 </div>
+
 
 <div class="main">
   <h2>Notebooks</h2>
   <p>select a subject..</p>
+</div>
+
+
+<div class="row">
+  <div class="col-4">
+    <div class="box" style="background-color: #ff6b6b;">English</div>
+  </div>
+  
+  <div class="col-4">
+    <div class="box" style="background-color: rgb(255, 195, 117);">Filipino</div>
+  </div>
+
+  <div class="col-4">
+    <div class="box" style="background-color: #3163c9;">Math</div>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col-4">
+    <div class="box">Science</div>
+  </div>
+  
+  <div class="col-4">
+    <div class="box">Social Studies</div>
+  </div>
+
+  <div class="col-4">
+    <div class="box">Values Education</div>
+  </div>
+
+</div>
+
+
 </div>
    
 </body>
